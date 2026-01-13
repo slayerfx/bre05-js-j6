@@ -1,8 +1,5 @@
-const form = document.querySelector("#loginForm");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+const loginForm = document.querySelector("#loginForm");
 
-  console.log(event.target.elements.username.value);
-  console.log(event.target.elements.select.value);
-  console.log(event.target.elements.message.value);
+loginForm.addEventListener("change", (event) => {
+  console.log(event.target.value);
 });
