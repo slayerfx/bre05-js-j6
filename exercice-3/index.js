@@ -1,4 +1,4 @@
-const form = document.querySelector("loginForm");
+const form = document.querySelector("#loginForm");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
