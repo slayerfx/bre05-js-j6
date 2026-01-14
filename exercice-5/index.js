@@ -1,7 +1,11 @@
-let article = document.querySelector("article");
-let span = article.querySelector("span");
-let section = article.querySelector("section");
+const champTexte = document.getElementById("champTexte");
+const couleur = document.getElementById("couleur");
+const resultat = document.getElementById("resultat");
 
-span.addEventListener("click", () => {
-  section.classList.toggle("closed");
+champTexte.addEventListener("input", function () {
+  resultat.textContent = champTexte.value;
+});
+
+couleur.addEventListener("input", function () {
+  resultat.style.backgroundColor = couleur.value;
 });

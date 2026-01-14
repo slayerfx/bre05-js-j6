@@ -2,20 +2,24 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Exercice 4 : changer d'onglet</title>
+    <title>Exercice 4 : Valider les champs de formulaire</title>
   </head>
   <body>
     <style>
-      p {
-        display: none;
+      .valid {
+        border: 1px solid green;
+      }
+
+      .invalid {
+        border: 1px solid red;
       }
     </style>
-    <button id="tab-1">Onglet 1</button>
-    <button id="tab-2">Onglet 2</button>
-    <button id="tab-3">Onglet 3</button>
-    <p id="tab-1-content">Je suis le contenu de l'onglet 1.</p>
-    <p id="tab-2-content">Je suis le contenu de l'onglet 2.</p>
-    <p id="tab-3-content">Je suis le contenu de l'onglet 3.</p>
+    <form id="signup-form">
+      <input type="password" id="password" name="password" />
+      <input type="password" id="confirm_password" name="confirm_password" />
+      <button type="submit">Valider</button>
+    </form>
   </body>
   <script type="application/javascript" src="index.js"></script>
 </html>
+Soft-wrap

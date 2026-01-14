@@ -1,7 +1,10 @@
-let article = document.querySelector("article");
-let span = article.querySelector("span");
-let section = article.querySelector("section");
+const checkbox = document.getElementById("cgu");
+const button = document.getElementById("submit-btn");
 
-span.addEventListener("click", () => {
-  section.classList.toggle("closed");
+checkbox.addEventListener("change", function () {
+  if (checkbox.checked) {
+    button.disabled = false;
+  } else {
+    button.disabled = true;
+  }
 });

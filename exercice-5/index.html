@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Exercice 5 : afficher des précisions</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5 - Formulaire dynamique</title>
     <style>
-      .closed {
-        display: none;
-      }
-
-      .open {
-        display: block;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+        }
+        input[type="color"] {
+            width: 50px;
+            height: 30px;
+            cursor: pointer;
+        }
+        #resultat {
+            padding: 20px;
+            min-height: 50px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
     </style>
-    <article>
-      <h2>Titre de l'article <span>+</span></h2>
-      <section class="closed">
-        <p>Ceci est un paragraphe qui contient des détails sur l'article</p>
-      </section>
-    </article>
-  </body>
-  <script type="application/javascript" src="index.js"></script>
+</head>
+<body>
+    <h1>Exercice 5 - Formulaire dynamique</h1>
+
+    <form>
+        <label>
+            Texte :
+            <input type="text" id="champTexte">
+        </label>
+        <label>
+            Couleur de fond :
+            <input type="color" id="couleur" value="#ffffff">
+        </label>
+    </form>
+
+    <div id="resultat"></div>
+
+    <script src="index.js"></script>
+</body>
 </html>
